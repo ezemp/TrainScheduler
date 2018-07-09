@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trains!!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class = "jumbotron" style = "background-color: black; color:white">
+        <h1 class = "display-3"></h1>
+        <p class = "lead">Below is the current train schedule. If you see one that is missing, feel free to add it to the list.</p>
+    </div>
+    <table style = "width:100%" class = "tTable">
+        <tr>
+            <th id ="tNameTable">Train Name</th>
+            <th id = "tDestTable">Destination</th>
+            <th id = "tFreqTable">Train's Frequency</th>
+            <th id = "nextArrival">Next Arrival</th>
+            <th id = "minAway">Minutes Away</th>
+        </tr>
+    </table>
+    <div class = "row">
+        <div class = "col-md-12">
+            <div class = "card-body">
+                <h2 class = "card-title">Add a Train</h2>
+                <form>
+                    <div>Train Name: <input type = "text" id = "tName"></div>
+                    <div>Destination:<input type = "text" id = "tDest"></div>
+                    <div>Train's Start Time:<input type = "text" id ="tStart"></div>
+                    <div>How Often Does The Train Run <input type = "text" id = "tFreq"></div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div><button type = "button" id = "submit" class = "btn btn-primary">Submit</button></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="assets/javascript/main.js"></script>    
+</body>
+</html>
